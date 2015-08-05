@@ -1,2 +1,2 @@
 # magento
-Magento Extensions
+Magento Extension for predefined order comments against different order status.

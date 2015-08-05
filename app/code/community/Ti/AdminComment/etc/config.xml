@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ti_AdminComment>
+            <version>1.2.8</version>
+        </Ti_AdminComment>
+    </modules>
+
+    <admin>
+        <routers>
+            <admincomment>
+                <use>admin</use>
+                <args>
+                    <module>Ti_AdminComment</module>
+                    <frontName>admincomment</frontName>
+                </args>
+            </admincomment>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <admincomment>
+                    <file>ti/admincomment.xml</file>
+                </admincomment>
+            </updates>
+        </layout>
+
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <add_messages_dropdown_to_comment_area>
+                        <type>singleton</type>
+                        <class>admincomment/observer</class>
+                        <method>addUpdateOrderCommentsBlock</method>
+                    </add_messages_dropdown_to_comment_area>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+    </adminhtml>
+
+    <global>
+        <models>
+            <admincomment>
+                <class>Ti_AdminComment_Model</class>
+                <resourceModel>admincomment_mysql4</resourceModel>
+            </admincomment>
+            <admincomment_mysql4>
+                <class>Ti_AdminComment_Model_Mysql4</class>
+                <entities>
+                    <messages>
+                        <table>messages</table>
+                    </messages>
+                </entities>
+            </admincomment_mysql4>
+        </models>
+
+        <resources>
+            <admincomment_setup>
+                <setup>
+                    <module>Ti_AdminComment</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </admincomment_setup>
+            <admincomment_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </admincomment_write>
+            <admincomment_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </admincomment_read>
+        </resources>
+
+        <blocks>
+            <admincomment>
+                <class>Ti_AdminComment_Block</class>
+            </admincomment>
+        </blocks>
+
+        <helpers>
+            <admincomment>
+                <class>Ti_AdminComment_Helper</class>
+            </admincomment>
+        </helpers>
+    </global>
+    <default>
+        <admincomment>
+            <admincomment_group>
+                <admincomment_enable>1</admincomment_enable>
+            </admincomment_group>
+        </admincomment>
+    </default>
+</config>

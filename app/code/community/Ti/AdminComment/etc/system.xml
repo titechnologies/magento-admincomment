@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+     <tabs>
+        <ti translate="label" module="admincomment">
+            <label>Ti</label>
+            <sort_order>110</sort_order>
+        </ti>
+    </tabs>
+     <sections>
+        <admincomment translate="label" module="admincomment">
+            <label>Admin Order Comments</label>
+            <tab>ti</tab>
+            <sort_order>1055</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <admincomment_group translate="label" module="admincomment">
+                    <label>Admin Order Comments Module Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1010</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <admincomment_enable translate="label">
+                            <label>Enable Admin Comment Module</label>
+                            <comment>If selected 'yes' then admin can add pre-defined messages to customer orders. Messages can be managed from 'Cms-> Admin Order Comments' menu</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </admincomment_enable>
+                    </fields>
+                </admincomment_group>
+            </groups>
+        </admincomment>
+    </sections>
+</config>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ti_AdminComment</name>
+    <version>1.2.8</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Module allow administrator to append pre-defined order comments and sent customers notification emails.</summary>
+    <description>&lt;h3&gt;Extension Features: &lt;/h3&gt;&#xD;
+&lt;ol&gt;&#xD;
+  &lt;li&gt;Simple to use and easy to configure.&lt;/li&gt;&#xD;
+  &lt;li&gt;Administrator can create messages against each order status from admin control panel.&lt;/li&gt;&#xD;
+  &lt;li&gt;A dropdown will appear in admin's order detail page just above the comment textarea.&lt;/li&gt;&#xD;
+  &lt;li&gt;Select message title from dropdown then message will appear in order comments textarea.&lt;/li&gt;&#xD;
+  &lt;li&gt;Administrator can send notification email by checking 'Notify Customer by Email' checkbox.&lt;/li&gt;&#xD;
+  &lt;li&gt;The customer can view the comment on the order detail page.&lt;/li&gt;&#xD;
+&lt;/ol&gt;&#xD;
+&#xD;
+&lt;h3&gt;Support: &lt;/h3&gt;&#xD;
+&lt;ol&gt;&#xD;
+  &lt;li&gt;If you have any question on our Magento extension, please contact us below:&lt;/li&gt;&#xD;
+  &lt;li&gt;Email: magento@titechnologies.in&lt;/li&gt;&#xD;
+&lt;ol&gt;</description>
+    <notes>This module is now compatible with 1.9.x</notes>
+    <authors><author><name>Tech Innovations</name><user>MAG002092034</user><email>magento@titechnologies.in</email></author></authors>
+    <date>2015-01-29</date>
+    <time>07:03:51</time>
+    <contents><target name="magecommunity"><dir name="Ti"><dir name="AdminComment"><dir name="Block"><dir name="Adminhtml"><dir name="Admincomment"><dir name="Edit"><file name="Form.php" hash="257666cdb89ebc4f57988f8413a63b7e"/><dir name="Tab"><file name="Form.php" hash="9911b9d8400a412114e4ced956906073"/></dir><file name="Tabs.php" hash="4277d75d20b0c5a3cbc643bd99d999d0"/></dir><file name="Edit.php" hash="4247e4810607506404c3ae66d3bb596a"/><dir name="Grid"><dir name="Renderer"><file name="Content.php" hash="5868bac0ea6d6c0f9dbd110276fbd7a2"/></dir></dir><file name="Grid.php" hash="3a834e5df84a2956fd39df877d0baea5"/></dir><file name="Admincomment.php" hash="5e0431487be5f07248d8b442a824967b"/><dir name="Order"><file name="Messages.php" hash="0f5eb50913eb389793fc64f7dca8e899"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="de238d5c1a3d4cc4bece1b382719c1e9"/></dir><dir name="Model"><file name="Messages.php" hash="10526fa8ea488fd6c93880431b7754f4"/><dir name="Mysql4"><dir name="Messages"><file name="Collection.php" hash="48305566c707ef3a6c6ab1702821dbb4"/></dir><file name="Messages.php" hash="b10f4067533f635fa8cc81cba2cffe0a"/></dir><file name="Observer.php" hash="5f16f18a8c303fcef9b08d57f20a8d86"/><file name="Status.php" hash="6bf903c61d78fc163d64c70be6960e0c"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="AdmincommentController.php" hash="589108247e2cfc8a671cc14fb7caeadc"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="f2bf4e4a94a8d073928218dd7b6e32bf"/><file name="config.xml" hash="7ab12cf35a3b8367eb6f3c46bda9c45e"/><file name="system.xml" hash="18de14fbd1ed9ee8f81dd5b7d76b3ebb"/></dir><dir name="sql"><dir name="admincomment_setup"><file name="mysql4-install-1.0.0.php" hash="dc1e8985adab9b24f2875ea0fa9205cb"/><file name="mysql4-upgrade-1.0.0-1.0.1.php" hash="72f389e5619bb345f8b93803de412716"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="ti"><file name="admincomment.xml" hash="002b04524a45218f9750c5ab31f0ae90"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ti_AdminComment.xml" hash="9523dfc413b58496466cab3027b2449f"/></dir></target><target name="mage"><dir name="js"><dir name="ti"><dir name="admincomment"><file name="order_messages.js" hash="809c09dbc43b2cc1dc490f7eb6d588c3"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
