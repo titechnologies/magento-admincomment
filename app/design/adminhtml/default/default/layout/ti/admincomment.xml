@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ti Admin Comment Module
+ *
+ * @category    Ti
+ * @package     Ti_AdminComment
+ * @copyright   Copyright (c) 2014 Ti Technologies (http://www.titechnologies.in)
+ * @link        http://www.titechnologies.in
+ */
+-->
+<layout version="0.1.0">
+    <admincomment_adminhtml_admincomment_index>
+        <reference name="content">
+            <block type="admincomment/adminhtml_admincomment" name="admincomment" />
+        </reference>
+    </admincomment_adminhtml_admincomment_index>
+
+    <adminhtml_sales_order_view>
+        <reference name="head">
+            <action method="addJs"><file>ti/admincomment/order_messages.js</file></action>
+        </reference>
+    </adminhtml_sales_order_view>
+
+    <admincomment_messages_dropdown>
+        <block type="admincomment/adminhtml_order_messages" name="dropdown" as="dropdown" template="admincomment/order/dropdown.phtml" output="toHtml" />
+    </admincomment_messages_dropdown>
+</layout>

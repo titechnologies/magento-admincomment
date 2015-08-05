@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <cms>
+            <children>
+                <items module="admincomment" translate="title">
+                    <title>Admin Order Comments</title>
+                    <sort_order>500</sort_order>
+                    <action>admincomment/adminhtml_admincomment</action>
+                    <depends>
+                        <config>admincomment/admincomment_group/admincomment_enable</config>
+                    </depends>
+                </items>
+            </children>
+        </cms>
+    </menu>
+
+   <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <admincomment  translate="title" module="ti_admincomment">
+                                        <title>Admin Order Comments Settings</title>
+                                    </admincomment>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+   </acl>
+
+</config>
